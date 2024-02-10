@@ -73,7 +73,7 @@ test("Title Assertion", async ({ page }) => {
   await expect(page).toHaveTitle(/.*HRM/);
 });
 
-test.only("Screenshot Assertion", async ({ page }) => {
+test("Screenshot Assertion", async ({ page }) => {
   await page.goto(
     "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
   );
