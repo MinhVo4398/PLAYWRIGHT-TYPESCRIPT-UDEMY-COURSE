@@ -1,0 +1,8 @@
+- Element is visible or hidden
+- Element is present / not present in DOM
+- Element is enabled or disabled
+- Element text matches or mismatches
+- Element attributes
+- URL
+- Title
+- Screenshot
