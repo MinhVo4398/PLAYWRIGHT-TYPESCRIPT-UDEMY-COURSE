@@ -19,3 +19,4 @@ test("Single Static Dropdown Handling", async ({ page }) => {
     await page.pause();
   await page.close();
 });
+
