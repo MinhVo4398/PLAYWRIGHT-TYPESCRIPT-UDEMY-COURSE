@@ -6,3 +6,13 @@
 - URL
 - Title
 - Screenshot
+
+---------- Annotation-----------------
+1) Skip - Unconditionally skip a test. Test is immediately aborted when you call test.skip();
+2) Skip with Condition - Conditionally skip a test with an optional description.\
+3) Fail - Unconditionally marks a test as "should fail"
+4) Fail with Condition - Conditionally mark a test as "should fail" with an optional description
+5) Fix me - Declares a test to be fixed. This test will not execute
+6) Slow - Unconditionally marks a test as "slow". Slow test will be given triple the default timeout.
+7) Slow with Condition- Conditionally marks a test as "slow with an optional description
+8) Only - Declares a focused test
