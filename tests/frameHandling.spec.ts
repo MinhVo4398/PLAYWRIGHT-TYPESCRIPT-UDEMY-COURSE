@@ -21,3 +21,17 @@ test("Frame Handling Using Page.FrameLocator", async ({ page }) => {
   await page.waitForTimeout(5000);
   await page.close();
 });
+
+test("Nested Frame Handling ", async ({ page }) => {
+  await page.goto("https://ui.vision/demo/webtest/frames/");
+  const frame3 = page.frame({
+    url: "https://ui.vision/demo/webtest/frames/frame_3.html",
+  });
+  const childFrames = frame3?.childFrames();
+  console.log("Number of Child Frames " + childFrames?.length);
+  
+  await childFrames[0].locator("//*[@id='i8']/div[3]/div").check({for:true});
+
+  await page.waitForTimeout(5000);
+  await page.close();
+});
