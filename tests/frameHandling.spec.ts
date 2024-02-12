@@ -30,7 +30,7 @@ test("Nested Frame Handling ", async ({ page }) => {
   const childFrames = frame3?.childFrames();
   console.log("Number of Child Frames " + childFrames?.length);
   
-  await childFrames[0].locator("//*[@id='i8']/div[3]/div").check({for:true});
+  await childFrames[0].locator("//*[@id='i8']/div[3]/div").check({force:true});
 
   await page.waitForTimeout(5000);
   await page.close();
