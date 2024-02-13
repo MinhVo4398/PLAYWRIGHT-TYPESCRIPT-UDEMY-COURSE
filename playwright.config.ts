@@ -2,7 +2,7 @@ import { defineConfig, devices } from "@playwright/test";
 
 export default defineConfig({
   timeout: 30 * 1000,
-  testDir: "./tests",
+  testDir: "./tests/smoke",
   fullyParallel: false,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
@@ -12,7 +12,7 @@ export default defineConfig({
     screenshot: "only-on-failure",
     headless: false,
     trace: "on-first-retry",
-    video:'off'
+    video: "off",
   },
   grepInvert: [new RegExp("@smoke"), new RegExp("@sanity")],
 

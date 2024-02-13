@@ -6,4 +6,4 @@ node_modules/
 /screenshot/
 
 /allure-results/
-/allure-report/
+allure-report/

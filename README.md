@@ -14,3 +14,9 @@ Run:
 
 4) Install Luxon (https://www.npmjs.com/package/luxon)
    + npm install -D luxon
+
+5) Run test on smoke folder
+   + In playwright config.ts :  testDir: "./tests/smoke",
+   + Run test: npx playwright test --headed --project=chromium
+   +  npx allure generate ./allure-results/ --clean  
+   +   npx allure open ./allure-report/       
