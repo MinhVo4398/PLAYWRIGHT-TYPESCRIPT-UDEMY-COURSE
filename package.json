@@ -10,6 +10,8 @@
   "devDependencies": {
     "@playwright/test": "^1.41.2",
     "@types/node": "^20.11.17",
+    "allure-commandline": "^2.27.0",
+    "allure-playwright": "^2.12.0",
     "csv-parse": "^5.5.3",
     "luxon": "^3.4.4"
   }
