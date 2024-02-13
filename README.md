@@ -20,3 +20,7 @@ Run:
    + Run test: npx playwright test --headed --project=chromium
    +  npx allure generate ./allure-results/ --clean  
    +   npx allure open ./allure-report/       
+  
+6) Clone project
+   + Install dependency: npm install
+   + Run test: npm run test
