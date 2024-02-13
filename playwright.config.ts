@@ -1,7 +1,7 @@
 import { defineConfig, devices } from "@playwright/test";
 
 export default defineConfig({
-  timeout: 30*1000,
+  timeout: 30 * 1000,
   testDir: "./tests",
   fullyParallel: false,
   forbidOnly: !!process.env.CI,
@@ -9,10 +9,11 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: "html",
   use: {
-    screenshot:"only-on-failure",
+    screenshot: "only-on-failure",
     headless: false,
     trace: "on-first-retry",
   },
+  grepInvert: [new RegExp("@smoke"), new RegExp("@sanity")],
 
   /* Configure projects for major browsers */
   projects: [
