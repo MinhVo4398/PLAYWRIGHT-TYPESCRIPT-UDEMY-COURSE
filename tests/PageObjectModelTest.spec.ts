@@ -1,9 +1,9 @@
 import { test, expect } from "@playwright/test";
 
-import { LandingPage } from "../tests/pages/LandingPage";
-import { HomePage } from "../tests/pages/HomePage";
-import { SignInPage } from "../tests/pages/SignInPage";
-import { SettingPage } from "../tests/pages/SettingPage";
+import { LandingPage } from "./pages/LandingPage";
+import { HomePage } from "./pages/HomePage";
+import { SignInPage } from "./pages/SignInPage";
+import { SettingPage } from "./pages/SettingPage";
 
 test("Login Conduit test using POM", async ({ page }) => {
   await page.goto("https://react-redux.realworld.io/#/?_k=tqgwz4");

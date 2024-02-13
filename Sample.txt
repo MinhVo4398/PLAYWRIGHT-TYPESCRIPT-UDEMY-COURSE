@@ -16,3 +16,12 @@
 6) Slow - Unconditionally marks a test as "slow". Slow test will be given triple the default timeout.
 7) Slow with Condition- Conditionally marks a test as "slow with an optional description
 8) Only - Declares a focused test
+
+
+---------------
+Issues of having more object created:
+1) Complexity
+2) Maintenance overhead
+3) Resource Consumption
+4) Redundancy
+
