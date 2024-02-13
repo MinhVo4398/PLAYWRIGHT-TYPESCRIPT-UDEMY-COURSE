@@ -12,6 +12,7 @@ export default defineConfig({
     screenshot: "only-on-failure",
     headless: false,
     trace: "on-first-retry",
+    video:'off'
   },
   grepInvert: [new RegExp("@smoke"), new RegExp("@sanity")],
 
